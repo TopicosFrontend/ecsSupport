@@ -1,0 +1,17 @@
+.page-login{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/fondoLogin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    display: grid;
+    align-items: center;
+}
+.card-login{
+    background-color: rgba(0, 0, 0, 0.836);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #fff;
+    border-radius: 0.5em;
+}
