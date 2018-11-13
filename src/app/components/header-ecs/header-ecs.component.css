@@ -1,0 +1,19 @@
+.header-respondent{
+    border-bottom: solid 1px gray;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logoBolumbia{
+    width: 100%;
+    height: auto;
+    max-width: 8em;
+    float: left;
+}
+.header-title p{
+    font-size: large;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0px;
+}

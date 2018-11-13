@@ -1,0 +1,17 @@
+<app-header-ecs></app-header-ecs>
+<div class="container fluid">
+  <br><br>
+  <p>Para dar inicio a la noche del censo favor completar el formulario</p>
+  <div class="row">
+    <div class="col-11 col-sm-10 col-md-9 col-xl-8">
+      <label for="username" class="d-block">Ingrese su usuario</label>
+      <input type="text" [(ngModel)]="user" name="username" class="form-control" placeholder="Usuario">
+      <label for="password" class="d-block">Ingrese su contraseña</label>
+      <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Contraseña">
+      <br>
+      <div class="d-flex justify-content-center">
+          <button (click)="startCensus()" class="btn btn-success align-items-center">Iniciar censo</button>
+      </div>
+    </div>
+  </div>
+</div>

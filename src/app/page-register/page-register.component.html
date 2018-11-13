@@ -1,3 +1,32 @@
-<p>
-  page-register works!
-</p>
+<section class="page-register-support">
+  <app-header-ecs></app-header-ecs>
+  <div class="container-fluid page-login">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-9 col-md-7 col-lg-6 col-xl-5">
+          <div class="container card-login">
+              <div class="row">
+                  <div class="col">
+                      <h5 class="text-center">Admin Censo Republica de Bolumbia</h5>
+                      <hr />
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <div>
+                          <label for="user" class="d-block">Ingrese su usuario</label>
+                          <input type="text" name="user" class="form-control" placeholder="Usuario">
+                          <label for="password" class="d-block">Ingrese su contrseña</label>
+                          <input type="password" name="password" class="form-control" placeholder="Contraseña">
+                          <br>
+                          <div class="d-flex justify-content-center">
+                              <button (click)="prueba()" class="btn btn-success align-items-center">Registrar</button>
+                          </div>
+                      </div>
+                      <hr />
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>

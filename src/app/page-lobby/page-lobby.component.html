@@ -1,3 +1,33 @@
-<p>
-  page-lobby works!
-</p>
+<section class="page-lobby">
+  <app-header-ecs></app-header-ecs>
+  <div class="container-fluid">
+    <div class="row flex-row-reverse">
+      <div class="col-12 padding-vertical card-options">
+        <h4 class="text-center" style="color: #007bff">Opciones</h4>
+        <hr>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="margin-button-vertical col-12 col-sm-6 col-md-4 col-xl-3 d-flex">
+              <button class="btn btn-outline-primary white-space-nowrap width-100"
+                      (click)="get_census_status()">
+                  Estado del censo
+              </button>
+            </div>
+            <div class="margin-button-vertical col-12 col-sm-6 col-md-4 col-xl-3 d-flex">
+              <button class="btn btn-outline-primary white-space-nowrap width-100"
+                      (click)="register_support()">
+                  Registrar personal de soporte
+              </button>
+            </div>
+            <div class="margin-button-vertical col-12 col-sm-6 col-md-4 col-xl-3 d-flex">
+              <button class="btn btn-outline-primary white-space-nowrap width-100"
+                      (click)="start_census_nigth()">
+                  Iniciar noche del censo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

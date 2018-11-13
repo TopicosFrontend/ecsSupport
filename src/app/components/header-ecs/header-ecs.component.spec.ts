@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageRegisterComponent } from './page-register.component';
+import { HeaderEcsComponent } from './header-ecs.component';
 
-describe('PageRegisterComponent', () => {
-  let component: PageRegisterComponent;
-  let fixture: ComponentFixture<PageRegisterComponent>;
+describe('HeaderEcsComponent', () => {
+  let component: HeaderEcsComponent;
+  let fixture: ComponentFixture<HeaderEcsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageRegisterComponent ]
+      declarations: [ HeaderEcsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageRegisterComponent);
+    fixture = TestBed.createComponent(HeaderEcsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

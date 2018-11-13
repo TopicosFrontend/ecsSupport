@@ -10,16 +10,16 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <form>
-                        <label for="username" class="d-block">Ingrese su contrseña</label>
-                        <input type="text" name="username" class="form-control" placeholder="Usuario">
-                        <label for="password" class="d-block">Ingrese su usuario</label>
-                        <input type="password" name="password" class="form-control" placeholder="Contraseña">
+                    <div>
+                        <label for="username" class="d-block">Ingrese su usuario</label>
+                        <input type="text" [(ngModel)]="name" name="username" class="form-control" placeholder="Usuario">
+                        <label for="password" class="d-block">Ingrese su contraseña</label>
+                        <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Contraseña">
                         <br>
                         <div class="d-flex justify-content-center">
-                            <button class="btn btn-success align-items-center">Ingresar</button>
+                            <button (click)="login()" class="btn btn-success align-items-center">Ingresar</button>
                         </div>
-                    </form>
+                    </div>
                     <hr />
                 </div>
             </div>
