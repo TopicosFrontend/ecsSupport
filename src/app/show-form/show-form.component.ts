@@ -24,9 +24,13 @@ export class ShowFormComponent implements OnInit {
 
   show_form() {
     if (this.cfn != '' && this.ecn != '') {
-      this.provider_support.show_form(this.ecn, this.cfn).subscribe(response => {
-        this.response = response.form
-        this.response_accepted = true
+      this.provider_support.show_form(this.cfn, this.ecn).subscribe(response => {
+        if (!response["state"]) {
+          this.response = response
+          this.response_accepted = true
+        } else {
+          alert("Codigos invalidos")
+        }
       });
     } else {
       alert("Copia los codigos ECN y CFN");

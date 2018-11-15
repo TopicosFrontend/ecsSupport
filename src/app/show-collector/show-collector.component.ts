@@ -15,8 +15,9 @@ export class ShowCollectorComponent implements OnInit {
 
   ngOnInit() {
     const routeParams = this.activeRoute.snapshot.params;
+    console.log(routeParams)
     this.provider_support.show_collector(routeParams.username).subscribe(response => {
-      this.collector = response.collector
+      this.collector = response
       console.log(response);
     });
   }
