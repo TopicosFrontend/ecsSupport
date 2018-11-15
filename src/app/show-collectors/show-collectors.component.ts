@@ -8,24 +8,14 @@ import { ProviderSupportService } from '../provider-services/provider-support.se
   styleUrls: ['./show-collectors.component.css']
 })
 export class ShowCollectorsComponent implements OnInit {
-  data = {
-    'collectors': [
-      { 'nombre': "Esteban", 'telefono': "123123213", 'usuario': "esilvac" },
-      { 'nombre': "S", 'telefono': "123123213", 'usuario': "esilvac2" },
-      { 'nombre': "Valentaina Duque", 'telefono': "123123213", 'usuario': "esivlac23" }
-    ]
-  }
-
   collectors = []
 
   constructor(private router: Router, private provider_support: ProviderSupportService) { }
 
   ngOnInit() {
     this.provider_support.show_collectors().subscribe(response => {
-      // this.collectors = response.collectors
-      alert(response);
+      this.collectors = response.collectors
     });
-    this.collectors = this.data["collectors"]
   }
 
   show_collector(username) {
