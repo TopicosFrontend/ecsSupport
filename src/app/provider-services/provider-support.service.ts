@@ -44,7 +44,7 @@ export class ProviderSupportService {
     const httpOptions = {
       withCredentials: true
     };
-    return this.http.get<any>(this.server + "/show_collector/?username=" + username, httpOptions);
+    return this.http.get<any>(this.server + "/show_collector/?user=" + username, httpOptions);
   }
 
   show_collectors() {
