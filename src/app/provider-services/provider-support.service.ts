@@ -9,6 +9,13 @@ export class ProviderSupportService {
 
   constructor(public http: HttpClient) { }
 
+  start_census(){
+    const httpOptions = {
+      withCredentials: true
+    };
+    return this.http.post<any>(this.server + "/start_census/", httpOptions);
+  }
+
   register_collectors(file) {
     const fd = new FormData();
     const httpOptions = {
@@ -17,6 +24,13 @@ export class ProviderSupportService {
 
     fd.append('file', file, file.name)
     return this.http.post<any>(this.server + "/register_collectors/", fd, httpOptions);
+  }
+
+  register_support(username, password){
+    const httpOptions = {
+      withCredentials: true
+    };
+    return this.http.post<any>(this.server + "/register/", {user: username, password: password}, httpOptions);
   }
 
   show_form(cfn, ecn) {

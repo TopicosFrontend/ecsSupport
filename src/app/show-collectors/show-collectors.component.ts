@@ -14,6 +14,7 @@ export class ShowCollectorsComponent implements OnInit {
 
   ngOnInit() {
     this.provider_support.show_collectors().subscribe(response => {
+      console.log(response)
       this.collectors = response.collectors
     });
   }

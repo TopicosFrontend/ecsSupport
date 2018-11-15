@@ -20,9 +20,9 @@
           <tbody>
             <tr *ngFor="let collector of collectors">
               <td>{{collector.nombre}}</td>
-              <td class="text-center">{{collector.usuario}}</td>
+              <td class="text-center">{{collector.user}}</td>
               <td class="text-center">{{collector.telefono}}</td>
-              <td class="text-right"><a (click)="show_collector(collector.usuario)" class="btn btn-dark text-white">Ver Recolector</a></td>
+              <td class="text-right"><a (click)="show_collector(collector.user)" class="btn btn-dark text-white">Ver Recolector</a></td>
             </tr>
           </tbody>
         </table>

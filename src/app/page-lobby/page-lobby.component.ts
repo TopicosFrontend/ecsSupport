@@ -22,6 +22,16 @@ export class PageLobbyComponent implements OnInit {
 
   }
 
+  start_census(){
+    this.provider_support.start_census().subscribe(response => {
+      alert(response.msg)
+    }, error => {
+      alert("Error al intentar conectarse con el servidor");
+      console.log(error);
+      
+    })
+  }
+
   register_support(){
     this.router.navigate(['/registerSupport']);
   }
