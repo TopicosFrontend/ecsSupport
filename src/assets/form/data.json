@@ -1,0 +1,268 @@
+{
+    "titulo": "CUESTIONARIO CENSO",
+    "fecha": "2018",
+    "secciones": [
+        {
+            "titulo": "DATOS DE LA VIVIENDA",
+            "preguntas": [
+                {
+                    "enunciado": "INDIQUE EL TIPO DE VIVIENDA",
+                    "respuesta": "asd",
+                    "opciones": [
+                        "Casa",
+                        "Departamento en edificio",
+                        "Vivienda tradicional indígena",
+                        "Pieza en casa antigua",
+                        "Mediagua, mejora, rancho o choza",
+                        "Móvil (carpa, casa rodante o similar)",
+                        "Otro tipo de vivienda particular"
+                    ]
+                },
+                {
+                    "enunciado": "INDIQUE SI LA VIVIENDA ESTÁ",
+                    "opciones": [
+                        "Con moradores presentes",
+                        "Con moradores ausentes",
+                        "En venta, para arriendo, abandonada u otro",
+                        "De temporada (vacacional u otro)"
+                    ]
+                }
+            ]
+        },
+        {
+            "titulo": "DATOS DE LA VIVIENDA",
+            "preguntas": [
+                {
+                    "enunciado": "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPAL EN LAS PAREDES EXTERIORES?",
+                    "opciones": [
+                        "Hormigón armado",
+                        "Albañilería: bloque de cemento, piedra o ladrillo",
+                        "Tabique forrado por ambas caras",
+                        "Tabique sin forro interior",
+                        "Adobe, barro, quincha, pirca u otro artesanal tradicional",
+                        "Materiales precarios (lata, cartón, plástico, etc.)"
+                    ]
+                },
+                {
+                    "enunciado": "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPAL EN LA CUBIERTA DEL TECHO?",
+                    "respuesta": "",
+                    "opciones": [
+                        "Tejas o tejuelas de arcilla, metálicas, de cemento, de madera, asfálticas o plásticas",
+                        "Losa hormigón",
+                        "Planchas metálicas de zinc, cobre, etc. o fibrocemento",
+                        "Fonolita o plancha de fieltro embreado",
+                        "Paja, coirón, totora o caña",
+                        "Materiales precarios (lata, cartón, plástico, etc.)"
+                    ]
+                },
+                {
+                    "enunciado": "¿CUÁL ES EL MATERIAL DE CONSTRUCCIÓN PRINCIPAL EN EL PISO?",
+                    "respuesta": "",
+                    "opciones": [
+                        "Parquet, piso flotante, cerámico, madera, alfombra, flexit, cubrepiso u otro similar; sobre radier o vigas de madera",
+                        "Radier sin revestimiento",
+                        "Baldosa de cemento.",
+                        "Capa de cemento sobre tierra",
+                        "Tierra"
+                    ]
+                }
+            ]
+        },
+        {
+            "titulo": "DATOS DE LA VIVIENDA",
+            "preguntas": [
+                {
+                    "enunciado": "¿CUÁNTAS PIEZAS DE ESTA VIVIENDA SE USAN EXCLUSIVAMENTE COMO DORMITORIO?",
+                    "respuesta": "",
+                    "opciones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "Más"
+                    ]
+                },
+                {
+                    "enunciado": "El agua que usa esta vivienda proviene principalmente de",
+                    "respuesta": "",
+                    "opciones": [
+                        "Red pública",
+                        "Pozo o noria",
+                        "Camión aljibe",
+                        "Río, vertiente, estero, canal, lago, etc"
+                    ]
+                }
+            ]
+        },
+        {
+            "titulo": "DATOS DE LAS PERSONAS",
+            "preguntas": [
+                {
+                    "enunciado": "¿QUÉ RELACIÓN DE PARENTESCO TIENE CON EL JEFE/a DE HOGAR?",
+                    "respuesta": "",
+                    "opciones": [
+                        "Esposo/a o cónyuge",
+                        "Conviviente por unión civil",
+                        "Conviviente de hecho",
+                        "Hijo/a",
+                        "Hijo/a del cónyuge",
+                        "Hermano/a",
+                        "Padre/Madre",
+                        "Cuñado/a",
+                        "Suegro/a",
+                        "Yerno/Nuera",
+                        "Nieto/a",
+                        "Abuelo/a",
+                        "Otro pariente",
+                        "No pariente"
+                    ]
+                },
+                {
+                    "enunciado": "¿CUÁL ES SU SEXO?",
+                    "respuesta": "",
+                    "opciones": [
+                        "Hombre",
+                        "Mujer"
+                    ]
+                },
+                {
+                    "enunciado": "¿EN QUÉ MES NACIÓ?",
+                    "respuesta": "",
+                    "opciones": [
+                        "Enero",
+                        "Febrero",
+                        "Marzo",
+                        "Abril",
+                        "Mayo",
+                        "Junio",
+                        "Julio",
+                        "Agosto",
+                        "Septiembre",
+                        "Noviembre",
+                        "Diciembre"
+                    ]
+                },
+                {
+                    "enunciado": "¿EN QUÉ AÑO NACIÓ?",
+                    "respuesta": ""
+                }
+            ]
+        },
+        {
+            "titulo": "DATOS DE LAS PERSONAS",
+            "preguntas": [
+                {
+                    "enunciado": "¿DONDE VIVE HABITUALMENTE?",
+                    "respuesta": "",
+                    "opciones": [
+                        "En esta comuna",
+                        "En otra comuna",
+                        "En otro país"
+                    ]
+                },
+                {
+                    "enunciado": "¿EN DONDE NACIÓ USTED?",
+                    "respuesta": "",
+                    "opciones": [
+                        "En esta comuna",
+                        "En otra comuna",
+                        "En otro país"
+                    ]
+                },
+                {
+                    "enunciado": "¿EN DONDE NACIÓ SU MADRE?",
+                    "respuesta": "",
+                    "opciones": [
+                        "En esta comuna",
+                        "En otra comuna",
+                        "En otro país"
+                    ]
+                }
+            ]
+        },
+        {
+            "titulo": "DATOS DE LAS PERSONAS",
+            "preguntas": [
+                {
+                    "enunciado": "¿ASISTE ACTUALMENTE A LA EDUCACIÓN FORMAL?",
+                    "respuesta": "",
+                    "opciones": [
+                        "Sí",
+                        "No"
+                    ]
+                },
+                {
+                    "enunciado": "¿CUÁL ES EL CURSO O AÑO MÁS ALTO APROBADO?",
+                    "respuesta": "",
+                    "opciones": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ]
+                },
+                {
+                    "enunciado": "EL CURSO ANTERIORMENTE DECLARADO, A CUÁL DE LOS SIGUIENTES NIVELES CORRESPONDE",
+                    "respuesta": "",
+                    "opciones": [
+                        "Sala Cuna o Jardín Infantil",
+                        "Prekínder",
+                        "Kínder",
+                        "Educación Básica Primaria",
+                        "Preparatoria",
+                        "Científico-Humanista",
+                        "Técnica Profesional",
+                        "Técnica Comercial, Industrial/Normalista",
+                        "Magister",
+                        "Doctorado"
+                    ]
+                }
+            ]
+        },
+        {
+            "titulo": "DATOS DE LAS PERSONAS",
+            "preguntas": [
+                {
+                    "enunciado": "¿SE CONSIDERA PERTENECIENTE A ALGÚN PUEBLO INDÍGENA U ORIGINARIO?",
+                    "respuesta": "",
+                    "opciones": [
+                        "Sí",
+                        "No"
+                    ]
+                },
+                {
+                    "enunciado": "DURANTE LA SEMANA PASADA, ¿TRABAJÓ?",
+                    "respuesta": "",
+                    "opciones": [
+                        "Sí, por un pago en dinero o especies",
+                        "Sí, sin pago para un familiar",
+                        "No, tenía empleo pero estuvo de vacaciones, con licencia, en descanso laboral, etc",
+                        "No, se encontraba buscando empleo",
+                        "No, estaba estudiando",
+                        "No, realizó quehaceres de su hogar",
+                        "No, es jubilado, pensionado o rentista",
+                        "No, otra situación"
+                    ]
+                },
+                {
+                    "enunciado": "¿CUÁNTAS HIJAS E HIJOS NACIDOS HA TENIDO EN TOTAL?",
+                    "respuesta": "",
+                    "opciones": [
+                        "Ninguno",
+                        "1",
+                        "2",
+                        "3",
+                        "Más de 3"
+                    ]
+                }
+            ]
+        }
+    ]
+}

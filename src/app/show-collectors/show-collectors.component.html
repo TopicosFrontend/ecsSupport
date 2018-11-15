@@ -1,0 +1,32 @@
+<app-header-ecs></app-header-ecs>
+
+<div class="container my-4">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <button type="button" class="btn btn-link" (click)="lobby()">&larr; Volver</button>
+      <h1 class="font-weight-bold">Recolectores</h1>
+      <span class="text-muted">Todos los colectores actuales de la plataforma</span>
+
+      <div class="collectors mt-5">
+        <table class="table border">
+          <thead class="thead-light">
+            <tr>
+              <th>Usuario</th>
+              <th class="text-center">Nombre</th>
+              <th class="text-center">Numero Telefonico</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let collector of collectors">
+              <td>{{collector.nombre}}</td>
+              <td class="text-center">{{collector.usuario}}</td>
+              <td class="text-center">{{collector.telefono}}</td>
+              <td class="text-right"><a (click)="show_collector(collector.usuario)" class="btn btn-dark text-white">Ver Recolector</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

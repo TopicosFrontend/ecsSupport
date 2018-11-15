@@ -11,11 +11,11 @@ export class PageLobbyComponent implements OnInit {
 
   constructor(public router: Router,
               public provider_support: ProviderSupportService) {
-    
+
   }
 
   ngOnInit() {
-    
+
   }
 
   ngAfterViewChecked(){
@@ -40,5 +40,15 @@ export class PageLobbyComponent implements OnInit {
     this.router.navigate(['startCensus']);
   }
 
-  
+  show_collectors(){
+    this.router.navigate(['show_collectors']);
+  }
+
+  show_form(){
+    this.router.navigate(['show_form']);
+  }
+
+  register_collectors() {
+    this.router.navigate(['register_collectors']);
+  }
 }

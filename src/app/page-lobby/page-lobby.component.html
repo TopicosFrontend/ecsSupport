@@ -1,33 +1,65 @@
+<app-header-ecs></app-header-ecs>
+
 <section class="page-lobby">
-  <app-header-ecs></app-header-ecs>
-  <div class="container-fluid">
-    <div class="row flex-row-reverse">
-      <div class="col-12 padding-vertical card-options">
-        <h4 class="text-center" style="color: #007bff">Opciones</h4>
-        <hr>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="margin-button-vertical col-12 col-sm-6 col-md-4 col-xl-3 d-flex">
-              <button class="btn btn-outline-primary white-space-nowrap width-100"
-                      (click)="get_census_status()">
-                  Estado del censo
-              </button>
-            </div>
-            <div class="margin-button-vertical col-12 col-sm-6 col-md-4 col-xl-3 d-flex">
-              <button class="btn btn-outline-primary white-space-nowrap width-100"
-                      (click)="register_support()">
-                  Registrar personal de soporte
-              </button>
-            </div>
-            <div class="margin-button-vertical col-12 col-sm-6 col-md-4 col-xl-3 d-flex">
-              <button class="btn btn-outline-primary white-space-nowrap width-100"
-                      (click)="start_census_nigth()">
-                  Iniciar noche del censo
-              </button>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="card mt-5">
+          <h5 class="card-header text-center">Opciones Recolector</h5>
+          <div class="card-body">
+            <button class="btn btn-outline-dark white-space-nowrap width-100 mb-3" (click)="show_collectors()">
+              Ver todos lo Recolectores
+            </button>
+            <button class="btn btn-outline-dark white-space-nowrap width-100" (click)="register_collectors()">
+              Registrar un recolector
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mt-5">
+          <h5 class="card-header text-center">Opciones Censo</h5>
+          <div class="card-body">
+            <button class="btn btn-outline-dark white-space-nowrap width-100 mb-3" (click)="start_census_nigth()">
+              Iniciar noche del censo
+            </button>
+            <button class="btn btn-outline-dark white-space-nowrap width-100" (click)="get_census_status()">
+                Estado del censo
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card mt-5">
+          <h5 class="card-header text-center">Opciones Formularios</h5>
+          <div class="card-body">
+            <button class="btn btn-outline-dark white-space-nowrap width-100" (click)="show_form()">
+              Buscar por Codigo
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <button class="btn btn-outline-primary white-space-nowrap width-100"
+  (click)="register_support()">
+  Registrar personal de soporte
+</button> -->
