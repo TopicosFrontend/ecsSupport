@@ -8,7 +8,7 @@ import { ProviderSupportService } from '../provider-services/provider-support.se
 })
 export class PageRegisterComponent implements OnInit {
 
-  user: String
+  username: String
   password: String
 
   constructor(public provider_service: ProviderSupportService) { }
@@ -17,7 +17,7 @@ export class PageRegisterComponent implements OnInit {
   }
 
   register_support(){
-    this.provider_service.register_support(this.user, this.password).subscribe(response => {
+    this.provider_service.register_support(this.username, this.password).subscribe(response => {
       if (response.state) {
         alert("Se ha creado con exito")
       }else{

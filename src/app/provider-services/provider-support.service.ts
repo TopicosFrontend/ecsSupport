@@ -13,7 +13,7 @@ export class ProviderSupportService {
     const httpOptions = {
       withCredentials: true
     };
-    return this.http.post<any>(this.server + "/start_census/", httpOptions);
+    return this.http.get<any>(this.server + "/start_census/", httpOptions);
   }
 
   register_collectors(file) {
@@ -30,6 +30,7 @@ export class ProviderSupportService {
     const httpOptions = {
       withCredentials: true
     };
+    console.log(username)
     return this.http.post<any>(this.server + "/register/", {user: username, password: password}, httpOptions);
   }
 
