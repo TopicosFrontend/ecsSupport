@@ -1,19 +1,30 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12 header">
-      <div class="container-fluid header-respondent">
-        <div class="row">
-          <div class="col-4">
-              <img (click)="navigate_to_lobby()" class="logoBolumbia" src="../../assets/bolumbialogo.jpg" alt="Logo Bolumbia">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light border-bottom">
+  <div class="container">
+    <a class="navbar-brand">
+      <img (click)="navigate_to_lobby()" src="../../assets/bolumbialogo.jpg" width="100" height="50">
+    </a>
+    <div class="nabar-brand">
+      <h5 class="text-dark font-weight-bold m-0">Censo electrónico de Bolumbia</h5>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="main-nav">
+      <!-- <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="form-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="forms ml-4">Formularios</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="form-dropdown">
+            <a href="#" class="dropdown-item" data-toggle="modal" data-target=".modal-search-form">Ver Formulario</a>
           </div>
-          <div class="col-6 header-title d-flex align-self-center">
-              <p>Censo electrónico de Bolumbia</p>
-          </div>
-          <div class="col-2 d-flex align-self-center">
-              <button (click)="logout()" class="btn btn-danger">Salir</button>
-          </div>
-        </div>
-      </div>
+        </li>
+      </ul> -->
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a (click)="logout()" class="btn btn-danger text-white px-3">Salir</a></li>
+      </ul>
     </div>
   </div>
-</div>
+</nav>

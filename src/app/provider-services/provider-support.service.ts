@@ -9,6 +9,37 @@ export class ProviderSupportService {
 
   constructor(public http: HttpClient) { }
 
+  register_collectors(file) {
+    const fd = new FormData();
+    const httpOptions = {
+      withCredentials: true
+    };
+
+    fd.append('file', file, file.name)
+    return this.http.post<any>(this.server + "/register_collectors/", fd, httpOptions);
+  }
+
+  show_form(cfn, ecn) {
+    const httpOptions = {
+      withCredentials: true
+    };
+    return this.http.get<any>(this.server + "/show_form/?cfn=" + cfn + "&ecn=" + ecn, httpOptions);
+  }
+
+  show_collector(username) {
+    const httpOptions = {
+      withCredentials: true
+    };
+    return this.http.get<any>(this.server + "/show_collector/?username=" + username, httpOptions);
+  }
+
+  show_collectors() {
+    const httpOptions = {
+      withCredentials: true
+    };
+    return this.http.get<any>(this.server + "/show_collectors/", httpOptions);
+  }
+
   get_census_status(){
     const httpOptions = {
       withCredentials: true
@@ -26,4 +57,5 @@ export class ProviderSupportService {
     };
     return this.http.post<any>(this.server + "/start_census_night/", req, httpOptions);
   }
+
 }

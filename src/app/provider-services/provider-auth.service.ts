@@ -14,7 +14,7 @@ export class ProviderAuthService {
   login(username, password){
     let req = {"user": username, "password": password};
     const httpOptions = {
-      headers: new HttpHeaders({ 
+      headers: new HttpHeaders({
         'Content-Type': 'application/json',
        }),
       withCredentials: true

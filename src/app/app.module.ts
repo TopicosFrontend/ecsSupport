@@ -10,6 +10,10 @@ import { ProviderAuthService } from './provider-services/provider-auth.service';
 import { HeaderEcsComponent } from './components/header-ecs/header-ecs.component';
 import { FormsModule } from '@angular/forms';
 import { StartCensusComponent } from './start-census/start-census.component';
+import { ShowFormComponent } from './show-form/show-form.component';
+import { ShowCollectorsComponent } from './show-collectors/show-collectors.component';
+import { ShowCollectorComponent } from './show-collector/show-collector.component';
+import { RegisterCollectorsComponent } from './register-collectors/register-collectors.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { StartCensusComponent } from './start-census/start-census.component';
     PageRegisterComponent,
     PageLobbyComponent,
     HeaderEcsComponent,
-    StartCensusComponent
+    StartCensusComponent,
+    ShowFormComponent,
+    ShowCollectorsComponent,
+    ShowCollectorComponent,
+    RegisterCollectorsComponent
   ],
   imports: [
     BrowserModule,

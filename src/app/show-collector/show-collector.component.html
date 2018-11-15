@@ -1,0 +1,56 @@
+<app-header-ecs></app-header-ecs>
+
+<div class="container my-4">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <button type="button" class="btn btn-link" (click)="show_collectors()">&larr; Volver</button>
+      <h1 class="font-weight-bold">Recolector</h1>
+      <p class="text-muted">Toda la información del recolector <b>{{collector.name}}</b></p>
+
+      <div class="collector mt-5">
+        <div class="row">
+          <div class="col-4">
+            <h6 class="font-weight-bold px-2 mb-2">Detalles</h6>
+            <div class="card rounded-0">
+              <div class="card-body p-0">
+                <div class="information text-center">
+                  <div class="border-bottom px-1 py-2">
+                    <h4 class="pb-0 m-0">{{collector.username}}</h4>
+                    <span class="small text-muted ">Usuario</span>
+                  </div>
+                  <div class="border-bottom px-1 py-2">
+                    <h4 class="pb-0 m-0">{{collector.name}}</h4>
+                    <span class="small text-muted">Nombre</span>
+                  </div>
+                  <div class="px-1 py-2">
+                    <h4 class="pb-0 m-0">{{collector.cellphone}}</h4>
+                    <span class="small text-muted">Numero de telefono</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <h6 class="font-weight-bold px-2 mb-2">Codigos</h6>
+            <table class="table border">
+              <thead class="thead-light">
+                <tr class="text-center">
+                  <th>ECN</th>
+                  <th>ECN</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let code of collector.codes" class="text-center">
+                  <th>{{code.cfn}}</th>
+                  <th>{{code.ecn}}</th>
+                  <th class="{{code.in_use? 'table-success' : 'table-danger'}}">{{code.in_use ? "En Uso" : "No Usado"}}</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
