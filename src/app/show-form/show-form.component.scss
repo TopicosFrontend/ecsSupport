@@ -1,0 +1,17 @@
+.section-info {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.section-questions {
+  .card {
+    .card-header {
+      font-size: 17px;
+      font-weight: bold;
+     }
+    .card-body { font-size: 14px; }
+  }
+}

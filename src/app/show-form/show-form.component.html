@@ -27,22 +27,24 @@
 
         <div class="form my-4" *ngIf="response_accepted">
           <div class="row">
-            <div class="col-4">
-              <div class="nav flex-column nav-pills border" id="form-tabs" role="tablist" aria-orientation="vertical">
-                <ng-template ngFor let-section="$implicit" [ngForOf]="data.secciones" let-i="index">
-                  <a class="nav-link text-dark border-bottom rounded-0 py-3" id="section" data-toggle="pill" href="#section" role="tab" aria-controls="section" aria-selected="true">
-                    {{section.titulo}}
-                  </a>
-                </ng-template>
-              </div>
-            </div>
-            <div class="col-8">
-              <div class="tab-content" id="form-tabs">
-                <ng-template ngFor let-section="$implicit" [ngForOf]="data.secciones" let-i="index">
-                  <div class="tab-pane fade show active" id="section-{{section}}" role="tabpanel" aria-labelledby="section">
-                    <ng-template ngFor let-question="$implicit" [ngForOf]="section.preguntas" let-z="index">
-                      <div class="question card rounded-0 mb-5">
+            <div class="col-12">
+              <ng-template ngFor let-section="$implicit" [ngForOf]="data.secciones" let-i="index">
+                <div class="sections mb-4" id="section-info-{{i}}">
 
+                  <div class="section-info d-flex justify-content-between border py-3 px-4" (click)="toggle_subject(i)">
+                    <span class="subject-name">{{section.titulo}}</span>
+                    <span class="glyphicon glyphicon-menu-down icon" aria-hidden="true"></span>
+                    <div class="arrow-up" style="display: none;">
+                      <fa-icon [icon]="faAngleUp"></fa-icon>
+                    </div>
+                    <div class="arrow-down" style="display: block;">
+                      <fa-icon [icon]="faAngleDown"></fa-icon>
+                    </div>
+                  </div>
+
+                  <div class="section-questions questions-close border border-top-0 p-4" id="section-{{i}}" style="display: none;">
+                    <ng-template ngFor let-question="$implicit" [ngForOf]="section.preguntas" let-z="index">
+                      <div class="question card rounded-0 mb-3">
                         <div class="card-header">{{question.enunciado}}</div>
 
                         <div class="card-body">
@@ -51,16 +53,15 @@
                           </ul>
                         </div>
 
-                        <div class="card-footer">
+                        <div class="card-footer bg-white">
                           <span class="text-muted">Respuesta: </span>
                           <span ng-if="response.secciones[i].preguntas[z].respuesta != ''">{{response.secciones[i].preguntas[z].respuesta}}</span>
                         </div>
-
                       </div>
                     </ng-template>
                   </div>
-                </ng-template>
-              </div>
+                </div>
+              </ng-template>
             </div>
           </div>
         </div>
@@ -68,7 +69,3 @@
     </div>
   </div>
 </div>
-
-<!-- {% for option in question.opciones %}
-  <li class="my-2">Coffee</li>
-{% endfor %} -->
