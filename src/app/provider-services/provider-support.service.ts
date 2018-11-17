@@ -9,6 +9,13 @@ export class ProviderSupportService {
 
   constructor(public http: HttpClient) { }
 
+  transfer_forms(username, password){
+    const httpOptions = {
+      withCredentials: true
+    };
+    return this.http.post<any>(this.server + "/transfer_forms/", {user: username, password: password}, httpOptions);
+  }
+
   start_census(){
     const httpOptions = {
       withCredentials: true

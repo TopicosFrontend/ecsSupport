@@ -61,4 +61,8 @@ export class PageLobbyComponent implements OnInit {
   register_collectors() {
     this.router.navigate(['register_collectors']);
   }
+
+  transfer_forms(){
+    this.router.navigate(['transfer_form']);
+  }
 }

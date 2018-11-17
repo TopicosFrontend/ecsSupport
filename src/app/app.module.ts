@@ -15,6 +15,7 @@ import { ShowFormComponent } from './show-form/show-form.component';
 import { ShowCollectorsComponent } from './show-collectors/show-collectors.component';
 import { ShowCollectorComponent } from './show-collector/show-collector.component';
 import { RegisterCollectorsComponent } from './register-collectors/register-collectors.component';
+import { PageTransferFormComponent } from './page-transfer-form/page-transfer-form.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RegisterCollectorsComponent } from './register-collectors/register-coll
     ShowFormComponent,
     ShowCollectorsComponent,
     ShowCollectorComponent,
-    RegisterCollectorsComponent
+    RegisterCollectorsComponent,
+    PageTransferFormComponent
   ],
   imports: [
     BrowserModule,

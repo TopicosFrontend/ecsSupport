@@ -8,6 +8,7 @@ import { ShowCollectorComponent } from './show-collector/show-collector.componen
 import { ShowCollectorsComponent } from './show-collectors/show-collectors.component';
 import { ShowFormComponent } from './show-form/show-form.component';
 import { RegisterCollectorsComponent } from './register-collectors/register-collectors.component'
+import { PageTransferFormComponent } from './page-transfer-form/page-transfer-form.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'register_collectors', component: RegisterCollectorsComponent },
   { path: 'show_form', component: ShowFormComponent },
   { path: 'show_collector/:username', component: ShowCollectorComponent },
-  { path: 'show_collectors', component: ShowCollectorsComponent }
+  { path: 'show_collectors', component: ShowCollectorsComponent },
+  { path: 'transfer_form', component: PageTransferFormComponent },
 ];
 
 @NgModule({
