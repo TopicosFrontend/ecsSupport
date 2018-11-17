@@ -7,7 +7,7 @@ import { HttpHeaders, HttpClient  } from '@angular/common/http';
 })
 export class ProviderAuthService {
 
-  server = "http://localhost:8000/support"
+  server = "http://ecsbackend.mybluemix.net/support"
 
   constructor(public http: HttpClient) { }
 

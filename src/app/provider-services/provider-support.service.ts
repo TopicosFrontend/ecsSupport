@@ -5,7 +5,7 @@ import { HttpHeaders, HttpClient  } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProviderSupportService {
-  server = "http://localhost:8000/support";
+  server = "http://ecsbackend.mybluemix.net/support";
 
   constructor(public http: HttpClient) { }
 
